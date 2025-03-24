@@ -51,6 +51,12 @@ body {
 .productos__items-imagen{
  width: 100%;
 }
+.productos__items-titulo{
+  width: 100%;
+ }
+ .productos__items-texto{
+  width: 100%;
+ }
 /* Media query para tabletas */
 @media (min-width: 600px) {
   .header {
