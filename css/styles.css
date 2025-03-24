@@ -1,21 +1,64 @@
+/* Estilos para dispositivos móviles */
 body {
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
-  text-align: center;
   background-color: #f8f8f8;
 }
-header {
+.header {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 25px 0px 0px;
+  align-items: center;
+}
+.header__logo {
   text-align: center;
+  margin-bottom: 20px;
 }
-footer {
-    background-color: #ccc;
+.header__logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header__navigation {
+  background-color: #ebebeb;
+  padding: 8px 0px;
+}
+.header__navigation-link {
+  color: #003d12;
+  text-decoration: none;
+  padding: 8px 0px;
+  display: block;
+  font-weight: 600;
+}
+.header__navigation-button {
+  background-color: #003d12;
+  color: #fff;
+  font-weight: 600;
+}
+/*
+* SECCION PRODUCTOS HOME
+*/
+.productos{
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.productos__items{
+  margin: 30px;
+  padding: 30px;
+  background-color: #e2e2e2;
+  border: 1px solid #ccc;
+}
+.productos__items-imagen{
+ width: 100%;
+}
+/* Media query para tabletas */
+@media (min-width: 600px) {
+  .header {
+    padding: 25px;
+    grid-template-columns: 1fr 2fr;
   }
-nav ul li{
-    list-style: none;
 }
-nav ul li a{
-    font-weight: 700;
-    color: darkgreen;
-    font-size: 18px;
-    text-decoration: none;
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
 }
